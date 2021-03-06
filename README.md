@@ -34,29 +34,29 @@ chatbot_XiaoMo
 ├── uer
 │   ├──__init__.py
 │   └──optimizers.py #一个调度器
-├──chat.py # 运行整个对话系统，整个系统的核心
-├──constants.py
-├──enc_dec.py # 对话系统模型
-├──modeling_distilbert.py # distilBert模型
-├──sentences_retrieval.py # WRD算法
-├──utils.py # 工具函数
+├── chat.py # 运行整个对话系统，整个系统的核心
+├── constants.py
+├── enc_dec.py # 对话系统模型
+├── modeling_distilbert.py # distilBert模型
+├── sentences_retrieval.py # WRD算法
+├── utils.py # 工具函数
 ├── README.md
 
 2、训练部分的代码
-├──run_kbert_ner.py # 未完成
-├──enc_dec_train.ipynb #训练对话系统模型
-├──run_distilbert_cls.ipynb
-├──run_kbert_cls.ipynb
+├── run_kbert_ner.py # 未完成
+├── enc_dec_train.ipynb #训练对话系统模型
+├── run_distilbert_cls.ipynb
+├── run_kbert_cls.ipynb
 
 3、其他代码
-├──CDial_chat.ipynb # 单独运行，测试CDial模型
-├──data_process_neo4j.py #将CnDbpedia.spo处理成csv数据，导入neo4j4.2.1
-├──CnDbpedia.csv
-├──CnDbpedia_entity.csv
-├──CnDbpedia_relation.csv
+├── CDial_chat.ipynb # 单独运行，测试CDial模型
+├── data_process_neo4j.py #将CnDbpedia.spo处理成csv数据，导入neo4j4.2.1
+├── CnDbpedia.csv
+├── CnDbpedia_entity.csv
+├── CnDbpedia_relation.csv
 
 4、前后端
-├──app.py # flask代码
+├── app.py # flask代码
 ├── .env
 ├── .flaskenv
 ├── templates
