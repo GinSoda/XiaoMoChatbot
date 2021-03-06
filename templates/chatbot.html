@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BotUI - Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botui.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botui-theme-default.css') }}" />
+  </head>
+  <body>
+    <div class="botui-app-container" id="hello-world">
+      <bot-ui>
+
+      </bot-ui>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/lib/vue.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/lib/jquery-3.5.1.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/lib/botui.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+    <script> 
+      chat("{{firstwords}}")
+    </script>
+  </body>
+</html>

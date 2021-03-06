@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>小墨对话机器人</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signin.css') }}" type="text/css">
+  </head>
+  <body>
+    <h1 align="center">
+        <img alt="Avatar" height="42" align="top" src="{{ url_for('static', filename='images/robot.jpg') }}">
+        小墨对话机器人
+    </h1>
+    <form>
+      <input checked id='signin' name='action' type='radio' value='signin'>
+      <label for='signin'>用户登录</label>
+      <input id='signup' name='action' type='radio' value='signup'>
+      <label for='signup'>用户注册</label>
+      <input id='reset' name='action' type='radio' value='reset'>
+      <label for='reset'>忘记密码</label>
+      <div id='wrapper'>
+        <div id='arrow'></div>
+        <input id='email' placeholder='用户名' type='text'>
+        <input id='pass' placeholder='密码' type='password'>
+        <input id='repass' placeholder='重复密码' type='password'>
+      </div>
+      <button type='button' onclick="window.location.href = '/index'">
+        <span>
+          重置密码
+          <br>
+          登录
+          <br>
+          注册
+        </span>
+      </button>
+    </form>
+    <div id='hint'>和对话机器人尽情的聊天吧</div>
+    <div id='hint2'>制作者：GZY</div>
+  </body>
+</html>
+
