@@ -15,7 +15,7 @@
 ```
 chatbot_XiaoMo
 
-## 1、主代码 ##
+1、主代码
 ├── brain #参考K-BERT说明
 │   ├── config.py
 │   ├── __init__.py
@@ -42,20 +42,20 @@ chatbot_XiaoMo
 ├──utils.py # 工具函数
 ├── README.md
 
-## 2、训练部分的代码 ##
+2、训练部分的代码
 ├──run_kbert_ner.py # 未完成
 ├──enc_dec_train.ipynb #训练对话系统模型
 ├──run_distilbert_cls.ipynb
 ├──run_kbert_cls.ipynb
 
-# 3、其他代码 #
+3、其他代码
 ├──CDial_chat.ipynb # 单独运行，测试CDial模型
 ├──data_process_neo4j.py #将CnDbpedia.spo处理成csv数据，导入neo4j4.2.1
 ├──CnDbpedia.csv
 ├──CnDbpedia_entity.csv
 ├──CnDbpedia_relation.csv
 
-# 4、前后端 #
+4、前后端
 ├──app.py # flask代码
 ├── .env
 ├── .flaskenv
